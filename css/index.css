@@ -5,7 +5,6 @@ html, body {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -33,7 +32,6 @@ html, body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  border-radius: 48%;
 }
 
 /* Position the "next button" to the right */
@@ -139,6 +137,7 @@ html, body {
 
 .container__head__logo a {
   text-decoration: none;
+  color: #008B8B;
 }
 
 .container__head__logo a h3 {
@@ -199,7 +198,7 @@ html, body {
 
 .container__head__log i {
   font-size: 2rem;
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
 }
@@ -262,32 +261,30 @@ html, body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: red;
 }
 
 .container__body__top__left__first {
-  background-color: #717171;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
 .container__body__top__left__first__top {
-  border: 1px solid red;
+  border: 1px solid black;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
 .container__body__top__left__first__mid {
-  border: 1px solid red;
+  border: 1px solid black;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
 .container__body__top__left__first__down {
-  border: 1px solid red;
+  border: 1px solid black;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -301,7 +298,7 @@ html, body {
 }
 
 .container__body__top__left__second__top {
-  border: 1px solid red;
+  border: 1px solid black;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -311,7 +308,7 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid red;
+  border: 1px solid black;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
@@ -331,7 +328,7 @@ html, body {
 }
 
 .container__body__top__left__second__down {
-  border: 1px solid red;
+  border: 1px solid black;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -345,21 +342,21 @@ html, body {
 }
 
 .container__body__top__left__third__top {
-  border: 1px solid red;
+  border: 1px solid black;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
 .container__body__top__left__third__mid {
-  border: 1px solid red;
+  border: 1px solid black;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
 .container__body__top__left__third__down {
-  border: 1px solid red;
+  border: 1px solid black;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -395,55 +392,66 @@ html, body {
           flex: 7;
 }
 
-.container__body__down__right__down__item__top {
+.container__body__down__right__top {
+  height: 2rem;
+  color: #66FF00;
+  font-weight: 900;
+  font-size: 2rems;
+}
+
+.container__body__down__right__down__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container__body__down__right__down__item__top {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  border-radius: 50%;
 }
 
 .container__body__down__right__down__item__top__first {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  height: 3rem;
   border: 1px solid black;
 }
 
 .container__body__down__right__down__item__top__second {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  height: 3rem;
   border: 1px solid black;
 }
 
-.container__body__down__right__down__item__top__third {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.container__body__down__right__down__item__mid {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  border-radius: 50%;
+}
+
+.container__body__down__right__down__item__mid__first {
+  height: 3rem;
   border: 1px solid black;
+}
+
+.container__body__down__right__down__item__mid__second {
+  height: 3rem;
+  border: 1px solid black;
+}
+
+.container__body__down__right__down__item__down {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  border-radius: 50%;
 }
 
 .container__body__down__right__down__item__down__first {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  height: 3rem;
   border: 1px solid black;
 }
 
 .container__body__down__right__down__item__down__second {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  border: 1px solid black;
-}
-
-.container__body__down__right__down__item__down__third {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  height: 3rem;
   border: 1px solid black;
 }
 /*# sourceMappingURL=index.css.map */

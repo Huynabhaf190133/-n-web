@@ -4,7 +4,6 @@ html,body{
 }
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
     position: relative;
     margin: auto;
   }
@@ -28,7 +27,6 @@ html,body{
     transition: 0.6s ease-in-out;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    border-radius: 48%;
   }
   
   /* Position the "next button" to the right */
@@ -110,6 +108,7 @@ html,body{
             flex: 2;
             a{
                 text-decoration: none;
+                color: #008B8B;
                 h3{
                     width: 25%;
                     padding: 1rem;
@@ -153,7 +152,7 @@ html,body{
             flex: 1;
             i{
                 font-size: 2rem;
-                margin-left: 1.5rem;
+                margin-left: 1.2rem;
                 transform: translateY(10px);
             }
         }
@@ -196,20 +195,18 @@ html,body{
             &__left{
                 display: flex;
                 flex: 1;
-                background-color: red;
                 &__first{
-                    background-color: #717171;
                     flex: 1;
                     &__top{
-                        border: 1px solid red;
+                        border: 1px solid black;
                         flex: 1;
                     }
                     &__mid{
-                        border: 1px solid red;
+                        border: 1px solid black;
                         flex: 1;
                     }
                     &__down{
-                        border: 1px solid red;
+                        border: 1px solid black;
                         flex: 1;
                     }
                 }
@@ -218,12 +215,12 @@ html,body{
                     flex: 2;
                     
                     &__top{
-                        border: 1px solid red;
+                        border: 1px solid black;
                         flex: 1;
                     }
                     &__mid{
                         display: flex;
-                        border: 1px solid red;
+                        border: 1px solid black;
                         flex: 2;
                         &__left{
                             flex: 1;
@@ -234,7 +231,7 @@ html,body{
                         }
                     }
                     &__down{
-                        border: 1px solid red;
+                        border: 1px solid black;
                         flex: 1;
                     }
                 }
@@ -242,15 +239,15 @@ html,body{
                     background-color: aqua;
                     flex: 1;
                     &__top{
-                        border: 1px solid red;
+                        border: 1px solid black;
                         flex: 1;
                     }
                     &__mid{
-                        border: 1px solid red;
+                        border: 1px solid black;
                         flex: 1;
                     }
                     &__down{
-                        border: 1px solid red;
+                        border: 1px solid black;
                         flex: 1;
                     }
                 }
@@ -272,40 +269,51 @@ html,body{
             &__right{
                 flex: 7;
                 &__top{
-
+                    height: 2rem;
+                    color: #66FF00;
+                    font-weight: 900;
+                    font-size: 2rems;
                 }
                 &__down{
                     &__title{
                         
                     }
                     &__item{
+                        display: flex;
+                        justify-content: space-around;
                         &__top{
-                            display: flex;
-                            flex-direction: column;
+                            flex-basis: 33%;
+                            border-radius: 50%;
                             &__first{
-                                flex: 1;
+                                height: 3rem;
                                 border: 1px solid black;
                             }
                             &__second{
-                                flex: 1;
+                                height: 3rem;
                                 border: 1px solid black;
                             }
-                            &__third{
-                                flex: 1;
+                        }
+                        &__mid{
+                            flex-basis: 33%;
+                            border-radius: 50%;
+                            &__first{
+                                height: 3rem;
+                                border: 1px solid black;
+                            }
+                            &__second{
+                                height: 3rem;
                                 border: 1px solid black;
                             }
                         }
                         &__down{
+                            flex-basis: 33%;
+                            border-radius: 50%;
                             &__first{
-                                flex: 1;
+                                height: 3rem;
                                 border: 1px solid black;
                             }
                             &__second{
-                                flex: 1;
-                                border: 1px solid black;
-                            }
-                            &__third{
-                                flex: 1;
+                                height: 3rem;
                                 border: 1px solid black;
                             }
                         }
