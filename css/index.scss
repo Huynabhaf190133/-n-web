@@ -1,3 +1,70 @@
+.button-add{
+    text-align: center;
+    margin-right: 15%;
+    padding-top: 5px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.button-add button{
+    background-color: #008B8B;
+    box-shadow: 0 0 5px red;
+   border-radius: 10px;
+   border: 5px solid black;
+   outline: none;
+   cursor: pointer;
+   padding: 5px 6px 3px 3px;
+   color: #E0C3FC;;
+}
+.button-add button:hover{
+    box-shadow: 0 0 35px black;
+}
+.control-img{
+    width: 80%;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+#main_menu li
+{
+    a{
+        display: block;
+        text-transform: none;
+        
+    }
+    float: left;
+    position: relative;
+    .sub_menu{
+        li{
+            transform: translateX(-33px);
+        }
+        z-index: 1;
+        position: absolute;
+        display: none;
+        background-color: yellow;
+        border-radius: 10px;
+        top: 100%;
+        left: 0%;
+        height: 330px;
+        width: 70px;
+        
+    }
+
+}
+#main_menu li:hover{
+    .sub_menu{
+        display: block;
+        background-color: red;
+    }
+    li:hover{
+        background-color: #007bff;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    
+}
+
+
 html,body{
     margin: 0;
     padding: 0;
@@ -21,7 +88,7 @@ html,body{
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: red;
+    color: #FF0800;
     font-weight: bold;
     font-size: 30px;
     transition: 0.6s ease-in-out;
@@ -66,14 +133,14 @@ html,body{
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #E6E6FA;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
   
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: #EF0107;
   }
   
   /* Fading animation */
@@ -106,11 +173,12 @@ html,body{
 
         &__logo{
             flex: 2;
+            position: relative;
             a{
                 text-decoration: none;
                 color: #008B8B;
                 h3{
-                    width: 25%;
+                    position: absolute;
                     padding: 1rem;
                     border: 1px solid red;
                     border-radius: 1rem;
@@ -154,6 +222,13 @@ html,body{
                 font-size: 2rem;
                 margin-left: 1.2rem;
                 transform: translateY(10px);
+                color: #F40009;
+            }
+            h2{
+                color: #007bff;
+            }
+            h2:hover{
+                cursor: pointer;
             }
         }
     }
@@ -164,11 +239,13 @@ html,body{
             width: 100%;
             background: rgb(24, 158, 255);
             ul{  
+                position: relative;
                 li{
+                    
                     display: inline;
                     list-style: none;
                     padding: 0.7rem;
-                    margin: 6px;
+                    margin: 7px;
                     border: 1px solid red;
                     border-radius: 10px;
                     background-color: yellow;
@@ -187,27 +264,37 @@ html,body{
         }
     }
     &__body{
-
+        
         flex-direction: column;
         &__top{
             flex: 1;
             display: flex;
+            max-height: 30rem;
             &__left{
                 display: flex;
                 flex: 1;
                 &__first{
                     flex: 1;
                     &__top{
-                        border: 1px solid black;
                         flex: 1;
+                        img{
+                            height: 5rem;
+                            width: 100%;
+                        }
                     }
                     &__mid{
-                        border: 1px solid black;
                         flex: 1;
+                        img{
+                            height: 20rem;
+                            width: 100%;
+                        }
                     }
                     &__down{
-                        border: 1px solid black;
                         flex: 1;
+                        img{
+                            height: 5rem;
+                            width: 100%;
+                        }
                     }
                 }
                 &__second{
@@ -215,13 +302,19 @@ html,body{
                     flex: 2;
                     
                     &__top{
-                        border: 1px solid black;
                         flex: 1;
+                        img{
+                            height: 10rem;
+                            width: 100%;
+                        }
                     }
                     &__mid{
                         display: flex;
-                        border: 1px solid black;
                         flex: 2;
+                        img{
+                            height: 10rem;
+                            width: 100%;
+                        }
                         &__left{
                             flex: 1;
                             background-color: red;
@@ -231,24 +324,33 @@ html,body{
                         }
                     }
                     &__down{
-                        border: 1px solid black;
                         flex: 1;
+                        img{
+                            height: 10rem;
+                            width: 100%;
+                        }
                     }
                 }
                 &__third{
                     background-color: aqua;
                     flex: 1;
                     &__top{
-                        border: 1px solid black;
                         flex: 1;
+                        img{
+
+                        }
                     }
                     &__mid{
-                        border: 1px solid black;
                         flex: 1;
+                        img{
+
+                        }
                     }
                     &__down{
-                        border: 1px solid black;
                         flex: 1;
+                        img{
+
+                        }
                     }
                 }
             }
@@ -262,59 +364,112 @@ html,body{
         }
         &__down{
             display: flex;
-            background-color: #777777;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);            
             &__left{
-                flex: 1;
-            }
+                flex: 1.2;
+                order: 2;
+                &__time{
+                    height: 4rem;
+                    color: #F40009;
+                    font-weight: bold;
+                }
+                &__content{
+                    &__Fcontact{
+                        border: 1px solid #8EC5FC;
+                        border-radius: 5px;
+                        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+                    }
+                    &__Scontact{
+                        border: 1px solid #8EC5FC;
+                        border-radius: 5px;
+                        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+                    }
+                }
+            }       
+            
             &__right{
                 flex: 7;
                 &__top{
-                    height: 2rem;
-                    color: #66FF00;
-                    font-weight: 900;
-                    font-size: 2rems;
+                    marquee{
+                        height: 2rem;
+                        color: #00f2fe;;
+                        font-weight: 900;
+                        font-size: 2rem;
+                        filter: drop-shadow(2px 2px 4px red) !important;
+                    }
+                    
                 }
                 &__down{
                     &__title{
+                        span{
+                            color:blue;
+                            font-weight: 900;
+                            font-size: 1.2em;
+                            border-bottom: 5px solid;
+                        }
+                        span:hover{
+                            cursor: pointer;
+                        }
                         
                     }
                     &__item{
                         display: flex;
                         justify-content: space-around;
+                        img{
+                            height: 10rem;
+                            width: 100%;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
                         &__top{
                             flex-basis: 33%;
-                            border-radius: 50%;
+                            
+                            
                             &__first{
-                                height: 3rem;
-                                border: 1px solid black;
+                                height: 10rem;
+                                margin:10px;
+                                margin-bottom: 15px;
+                                border: 5px solid #008000;
                             }
                             &__second{
-                                height: 3rem;
-                                border: 1px solid black;
+                                height: 10rem;
+                                margin:10px;
+                                margin-bottom: 15px;
+                                border: 5px solid #008000;
                             }
                         }
                         &__mid{
                             flex-basis: 33%;
-                            border-radius: 50%;
+                            
                             &__first{
-                                height: 3rem;
-                                border: 1px solid black;
+                                height: 10rem;
+                                margin:10px;
+                                margin-bottom: 15px;
+                                border: 5px solid #008000;
                             }
                             &__second{
-                                height: 3rem;
-                                border: 1px solid black;
+                                height: 10rem;
+                                margin:10px;
+                                margin-bottom: 15px;
+                                border: 5px solid #008000;
                             }
                         }
                         &__down{
                             flex-basis: 33%;
-                            border-radius: 50%;
+                            
                             &__first{
-                                height: 3rem;
-                                border: 1px solid black;
+                                height: 10rem;
+                                margin:10px;
+                                margin-bottom: 15px;
+                                border: 5px solid #008000;
                             }
                             &__second{
-                                height: 3rem;
-                                border: 1px solid black;
+                                height: 10rem;
+                                margin:10px;
+                                margin-bottom: 15px;
+                                border: 5px solid #008000;
                             }
                         }
                     }

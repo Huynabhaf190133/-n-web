@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>Web bán hàng Write by HuyK3</title>
@@ -24,25 +26,47 @@
             </div>
             <div class="container__head__cart">
                 <p>Thông tin giỏ hàng</p>
-                <i class="fas fa-cart-plus"></i>
+                <a href="./cart.php"><i class="fas fa-cart-plus"></i></a>
                 <small>0sp</small>
             </div>
             <div class="container__head__log">
                 <i class="fas fa-user-circle"></i>
-                <h2>Log in</h2>
-                
+                <a href="sign.php"><h2 id="login">Log in</h2></a>
+
             </div>
         </div>
         <div class="container__headnav" id="nav">
             <nav>
-                <ul>
+                <ul id="main_menu">
                     <li><a href="#"><i class="fas fa-home"></i></a></li>
-                    <li><a href="#">Giới thiệu</a></li>
-                    <li><a href="#">Điện Thoại</a></li>
-                    <li><a href="#">Máy Tính</a></li>
-                    <li><a href="#">Laptop</a></li>
-                    <li><a href="#">Phụ Kiện</a></li>
-                    <li><a href="#">Hỗ trợ</a></li>
+                    <li><a href="#">Giới thiệu <i class="fas fa-pager"></i></a></li>
+                    <li><a href="#">Điện Thoại <i class="fas fa-mobile"></i></a>
+                        <ul class="sub_menu">
+                            <li><a href="">Iphone8</a></li>
+                            <li><a href="">IphoneX</a></li>
+                            <li><a href="">Ipad</a></li>
+                            <li><a href="">Galaxy</a></li>
+                            <li><a href="">Oppo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Máy Tính <i class="fas fa-desktop"></i></a>
+                        <ul class="sub_menu">
+                            <li><a href="">Samsung</a></li>
+                            <li><a href="">Asus</a></li>
+                            <li><a href="">Lenove</a></li>
+                            <li><a href="">Apple</a></li>
+                            <li><a href="">Oppo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Laptop <i class="fas fa-laptop"></i></a></li>
+                    <li><a href="#">Phụ Kiện <i class="fas fa-keyboard"></i></a></li>
+                    <li><a href="#">Hỗ trợ <i class="far fa-question-circle"></i></a>
+                        <ul class="sub_menu">
+                            <li><a href="https://www.facebook.com/NothingFormeRN/">Facebook</a></li>
+                            <li><a href="#">About:</a></li>
+                            <li><a href="gamecaro.html">Game Caro</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -53,73 +77,77 @@
                 <div class="container__body__top__left">
                     <div class="container__body__top__left__first">
                         <div class="container__body__top__left__first__top">
-                            <a href="#"><img src="https://product.hstatic.net/1000384805/product/ipad_air_2_94110b5b2f434c25a9390aca99c21168_master.jpg" style="height: 10rem;width: 100%;" alt=""></a>
+                            <a href="#">Picture 1</a>
                         </div>
                         <div class="container__body__top__left__first__mid">
-                            <a href="#"><img src="https://cdn.tgdd.vn/Files/2020/09/01/1286153/iphone12_800x450.jpg" style="width: 100%;height: 10rem;" alt=""></a>
-                        </div>
+                            <a href="#">Picture 2</div>
                         <div class="container__body__top__left__first__down">
-                            <a href="#"><img src="https://shop.photozone.com.vn/wp-content/uploads/2017/06/may-anh-ky-thuat-tot-nhat-hien-nay-2017_photozone-com-vn-3.jpg" style="width: 100%;height: 10rem;" alt=""></a>
+                            <a href="#">Picture 3</a>
                         </div>
                     </div>
                     <div class="container__body__top__left__second">
                         <div class="container__body__top__left__second__top">
-                            <a href="#"><img src="//bizweb.dktcdn.net/thumb/1024x1024/100/306/444/products/bo-dell-9020-man-20-ii-7c126f72-d9c1-4ff6-825e-4e5c50cad5b6.jpg?v=1576922023307" style="width: 100%;height: 10rem;" alt=""></a>
+                            <a href="#"></a>
                         </div>
                         <div class="container__body__top__left__second__mid">
                             <div class="container__body__top__left__second__mid__left">
-                                <a href="#"><img src="https://cdn.nhanh.vn/cdn/store/26/artCT/57490/7_kinh_nghiem_ban_phu_kien_dien_thoai_khong_the_bo_qua_2.jpg" style="width: 100%;height: 10rem;" alt=""></a>
+                                <a href="#"></a>
                             </div>
                             <div class="container__body__top__left__second__mid__right">
-                                <a href="#"><img src="https://cdn.cellphones.com.vn/media/catalog/product/cache/7/image/9df78eab33525d08d6e5fb8d27136e95/i/p/ipad-pro-11-select-cell-silver-202003-removebg-preview.png.jpg" style="width: 100%;height: 10rem;" alt=""></a>
+                                <a href="#"></a>
                             </div>
                         </div>
                         <div class="container__body__top__left__second__down">
-                            <a href="#"><img src="https://storage.googleapis.com/shopdunk-images/tintucshopdunknew/2017/08/tin-tuc-tong-hop-shopdunk-min.jpg" style="width: 100%;height: 8rem;" alt=""></a>
+                            <a href="#"></a>
                         </div>
                     </div>
                     <div class="container__body__top__left__third">
                         <div class="container__body__top__left__third__top">
-                            <h1>Tư vấn</h1>
+                            <a href="#"><img src="" alt=""></a>
                         </div>
                         <div class="container__body__top__left__third__mid">
-                            <h1>Tin tức</h1>
+                            <a href="#"><img src="" alt=""></a>
                         </div>
                         <div class="container__body__top__left__third__down">
-                            <h1>Thông tin đơn hàng</h1>
+                            <a href="#"><img src="" alt=""></a>
                         </div>
                     </div>
                 </div>
                 <!--SlidesShow-->
                 <div class="container__body__top__right">
                     <!-- Slideshow container -->
-                    <div class="slideshow-container"> 
+                    <div class="slideshow-container">
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides fade">
-                            <div class="numbertext">1 / 3</div>
-                            <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-9/123005251_1241572432891546_5647213399614345452_o.jpg?_nc_cat=102&ccb=2&_nc_sid=0debeb&_nc_ohc=vd49CfQ8LIcAX9lnA8o&_nc_ht=scontent.fhan2-1.fna&oh=7a3849f583d2886f349d5e7860e0706d&oe=5FF04278" style="width:100%">
-                            <div class="text">Caption Text</div>
+                            <div class="numbertext">1 / 4</div>
+                            <img src="img/slide1.png" style="width:100%">
+                            <div class="text">Anime 1</div>
                         </div>
                         <div class="mySlides fade">
-                            <div class="numbertext">2 / 3</div>
-                            <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.0-9/84450827_1016309765417815_2708248322061107200_n.jpg?_nc_cat=108&ccb=2&_nc_sid=174925&_nc_ohc=GZz_7t6HE7YAX90xL-D&_nc_ht=scontent.fhan2-3.fna&oh=63144aba57b742130740fc30aa4e8a71&oe=5FEFFAB0" style="width:100%">
-                            <div class="text">Caption Two</div>
-                        </div>                
+                            <div class="numbertext">2 / 4</div>
+                            <img src="img/slide2.png" style="width:100%">
+                            <div class="text">Anime 2</div>
+                        </div>
                         <div class="mySlides fade">
-                            <div class="numbertext">3 / 3</div>
-                            <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-9/122160768_1233659567016166_2195482321258795972_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8bfeb9&_nc_ohc=fyZK0C7F2eUAX9HJOCb&_nc_ht=scontent.fhan2-1.fna&oh=9582b5b2f5bf700b1c3c78365cae36dd&oe=5FF2FDDF" style="width:100%">
-                            <div class="text">Caption Three</div>
-                        </div>                    
-                        
+                            <div class="numbertext">3 / 4</div>
+                            <img src="img/slide3.png" style="width:100%">
+                            <div class="text">Anime 3</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="img/slide4.png" style="width:100%">
+                            <div class="text">Anime 4</div>
+                        </div>
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
-                    <br>               
-                   
+                    <br>
+
                     <div style="text-align:center">
                         <span class="dot" onclick="currentSlide(1)"></span>
                         <span class="dot" onclick="currentSlide(2)"></span>
                         <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
                     </div>
                 </div>
             </div>
@@ -130,9 +158,9 @@
 
 
 
-            
+
             <!--layout dưới-->
-            
+
 
 
 
@@ -142,14 +170,17 @@
         <div class="container__body__down">
             <div class="container__body__down__left">
                 <div class="container__body__down__left__time" id="time"></div>
-                <div class="container__body__down__left__Fcontact">
-                    <b>Nhân viên bán hàng 1</b>
-                    <p>Ms: Xuân <b>Sdt: 0987827555</b></p>
+                <div class="container__body__down__left__content">
+                    <div class="container__body__down__left__content__Fcontact">
+                        <b>Nhân viên bán hàng 1</b>
+                        <p>Ms: Xuân <b>Sdt: 0987827555</b></p>
+                    </div>
+                    <div class="container__body__down__left__content__Scontact">
+                        <b>Nhân viên bán hàng 2</b>
+                        <p>Mr: Long <b>Sdt: 0987469359</b></p>
+                    </div>
                 </div>
-                <div class="container__body__down__left__Scontact">
-                    <b>Nhân viên bán hàng 2</b>
-                    <p>Mr: Long <b>Sdt: 0987469359</b></p>
-                </div>
+                
             </div>
             <div class="container__body__down__right">
                 <div class="container__body__down__right__top">
@@ -157,42 +188,49 @@
                 </div>
                 <div class="container__body__down__right__down">
                     <div class="container__body__down__right__down__title">
-                        <u>Sản phẩm nổi bật</u>
+                        <span>Sản phẩm nổi bật</p>
                     </div>
                     <div class="container__body__down__right__down__item">
                         <div class="container__body__down__right__down__item__top">
-                            <div class="container__body__down__right__down__item__top__first">
-                                a
+                            <div style="position: relative;" class="container__body__down__right__down__item__top__first control-img">
+                                <h4 style="position: absolute;top: 0;right: 40%;color: red;font-size: 20px;" >Iphone 8</h4>
+                                <a href="index.php?add_cart="><img src="img/product/iphone8.jpg" alt=""></a>
                             </div>
-                            <div class="container__body__down__right__down__item__top__second">
-                                a
+                            <div class="button-add"><button><i class="fas fa-cart-arrow-down"></i> Thêm sản phẩm</button></div>
+                            <div style="position: relative;" class="container__body__down__right__down__item__top__second control-img">
+                                <h4 style="position: absolute;top: 0;right: 40%;color: red;font-size: 20px;">Iphone X</h4>
+                                <a href="#"><img src="img/product/iphonex.jpg" alt=""></a>
                             </div>
+                            <div class="button-add"><button><i class="fas fa-cart-arrow-down"></i> Thêm sản phẩm</button></div>
                         </div>
-                        <div class="container__body__down__right__down__item__mid">
-                            <div class="container__body__down__right__down__item__mid__first">
-                                a
+                        <div class="container__body__down__right__down__item__mid ">
+                            <div style="position: relative;" class="container__body__down__right__down__item__mid__first control-img">
+                                <h4 style="position: absolute;top: 0;right: 40%;color: red;font-size: 20px;">Ipad pro</h4>
+                                <a href="#"><img src="img/product/ipad.jpg" alt=""></a>
                             </div>
-                            <div class="container__body__down__right__down__item__mid__second">
-                                a
+                            <div class="button-add"><button><i class="fas fa-cart-arrow-down"></i> Thêm sản phẩm</button></div>
+                            <div style="position: relative;" class="container__body__down__right__down__item__mid__second control-img">
+                                <h4 style="position: absolute;top: 0;right: 40%;color: red;font-size: 20px;">SS S20</h4>
+                                <a href="#"><img src="img/product/galaxy.jpg" alt=""></a>
                             </div>
+                            <div class="button-add"><button><i class="fas fa-cart-arrow-down"></i> Thêm sản phẩm</button></div>
                         </div>
                         <div class="container__body__down__right__down__item__down">
-                            <div class="container__body__down__right__down__item__down__first">
-                                a
+                            <div style="position: relative;" class="container__body__down__right__down__item__down__first control-img">
+                                <h4 style="position: absolute;top: 0;right: 40%;color: red;font-size: 20px;">VIVO s10</h4>
+                                <a href="#"><img src="img/product/oppo.jpg" alt=""></a>
                             </div>
-                            <div class="container__body__down__right__down__item__down__second">
-                                a
+                            <div class="button-add"><button><i class="fas fa-cart-arrow-down"></i> Thêm sản phẩm</button></div>
+                            <div style="position: relative;" class="container__body__down__right__down__item__down__second control-img">
+                                <h4 style="position: absolute;top: 0;right: 40%;color: red;font-size: 20px;">Dell Vtt8</h4>
+                                <a href="#"><img src="img/product/macbookpro.jpg" alt=""></a>
                             </div>
+                            <div class="button-add"><button><i class="fas fa-cart-arrow-down"></i> Thêm sản phẩm</button></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
         <div class="footer"></div>
     </div>
     <script src="script/index.js"></script>

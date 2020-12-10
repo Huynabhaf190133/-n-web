@@ -38,8 +38,25 @@ function autoslides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(autoslides, 6000); // Change image every 2 seconds
+  setTimeout(autoslides, 5000); // Change image every 5 seconds
 }
+var clock=document.getElementById('time');
+setInterval(function(){
+  var date=new Date();
+  var Weekday=new Array(7);
+  Weekday[0]="Chủ nhật";
+  Weekday[1]="Thứ 2";
+  Weekday[2]="Thứ 3";
+  Weekday[3]="Thứ 4";
+  Weekday[4]="Thứ 5";
+  Weekday[5]="Thứ 6";
+  Weekday[6]="Thứ 7";
+  var d=Weekday[date.getDay()];
+  var m=date.getMonth()+1;
+  var dayofmonth=date.getDate(0,m);
+  var y=date.getFullYear();
+  clock.innerHTML=d+"<br>Ngày"+" "+dayofmonth+" "+"Tháng "+m+" "+"Năm "+y;
+},1000)
 // window.onscroll=function(){stickyNav()};
 //   var x=document.getElementById("nav");
 //   var y=x.offsetTop;
